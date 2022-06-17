@@ -16,7 +16,7 @@ pipeline:
   genome_filename: reference.fa # filename for genome
   annotation_filename: reference.gtf # filename for gene annotations
   genome_name: "S1500" # used for labeling genome index files
-  sample_id: "Sample_ID" # header for the column for 'sample id' in the metadata file. Fasta files should be named sampleid.fa.gz
+  sample_id: "sample_ID" # header for the column for 'sample id' in the metadata file. Fasta files should be named sampleid.fa.gz
   mode: se # one of 'se' (single end) or 'pe' (paired end)
   threads: 8 # number of threads to use, for multi-threaded programs
 
