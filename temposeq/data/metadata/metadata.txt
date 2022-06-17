@@ -1,4 +1,4 @@
-name	sample_ID	sample_name	sample_plate	row	column	well_position	chemical	chemical_long_name	dose	group	technical_control	reference_rna	solvent_control	I7_Index_ID	index	I5_Index_ID	index2	original_names
+sample_ID	name	sample_name	sample_plate	row	column	well_position	chemical	chemical_long_name	dose	group	technical_control	reference_rna	solvent_control	I7_Index_ID	index	I5_Index_ID	index2	original_names
 HCC3_BaP_C0_093_S93	S93	HCC3_BaP_C0_093	Plate1_IndexA	E	12	E12	BaP	Benzo[a]pyrene	0	BaP_0	FALSE	FALSE	TRUE	R947	GTAGCTCCA	F941	GATTGTGTT	HCC3_BaP_C0_093_S93
 HCC3_BaP_C0_094_S94	S94	HCC3_BaP_C0_094	Plate1_IndexA	F	12	F12	BaP	Benzo[a]pyrene	0	BaP_0	FALSE	FALSE	TRUE	R947	GTAGCTCCA	F943	CGTAACTTA	HCC3_BaP_C0_094_S94
 HCC3_CISP_C0_281_S281	S281	HCC3_CISP_C0_281	Plate3_IndexC	A	12	A12	CISP	Cisplatin	0	CISP_0	FALSE	FALSE	TRUE	R948	GAATTGCTG	F933	ACGACTTGG	HCC3_CISP_C0_281_S281
