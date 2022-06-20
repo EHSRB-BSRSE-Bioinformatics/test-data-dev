@@ -13,8 +13,8 @@ common:
 
 pipeline:
   genomedir: reference/ # directory where genone information can be found (the files below should be in this directory)
-  genome_filename: reference.fa # filename for genome
-  annotation_filename: reference.gtf # filename for gene annotations
+  genome_filename: humansurrogate1_2.fa # filename for genome
+  annotation_filename: humansurrogate1_2.gtf # filename for gene annotations
   genome_name: "S1500" # used for labeling genome index files
   sample_id: "sample_ID" # header for the column for 'sample id' in the metadata file. Fasta files should be named sampleid.fa.gz
   mode: se # one of 'se' (single end) or 'pe' (paired end)
@@ -59,15 +59,10 @@ DESeq2:
   use_cached_RData: FALSE        # If possible, load the saved RData for dds object and gene IDs
   cpus: 41                       # Set to a lower number (e.g., 2 to 4) if you aren't working in a server environment
   run_pathway_analysis: TRUE     # Optionally disable pathway analysis if not available for your organism
-  wikipathways_directory: "~/shared/dbs/wikipathways"
-  biospyder_dbs: "~/shared/dbs/biospyder/"
-  biospyder_manifest_file:  "181019_Human_S1500_Surrogate_1.2_Manifest.txt"
-  # "191113_Human_S1500_Surrogate_2.0_Manifest.csv"
-  # "181019_Human_S1500_Surrogate_1.2_Manifest.txt"
-  # "191004_Human_Whole_Transcriptome_2.0_Manifest.txt"
+  wikipathways_directory: "./"
+  biospyder_dbs: "./"
+  biospyder_manifest_file:  "Human_S1500_1.2_standardized.csv"
   wikipathways_filename: "wikipathways-20210810-gmt-Homo_sapiens.gmt"
-  # "wikipathways-20210810-gmt-Mus_musculus.gmt"
-  # "wikipathways-20210810-gmt-Rattus_norvegicus.gmt"
   nBestFeatures: 20              # The number of best features to make plots of their counts
   nBest: 100                     # Number of features to include in table and limiting PCA/clustering analysis
   nHeatmap: 50                   # Number of most variable genes for heatmap
