@@ -26,7 +26,7 @@ wget https://github.com/EHSRB-BSRSE-Bioinformatics/unify_temposeq_manifests/raw/
 # Run this if you don't already have an environment to use...
 #conda env create -f environment.yml
 #mamba activate R-ODAF
-mamba activate odaf
+conda activate R-ODAF
 snakemake --cores 8
 Rscript scripts/render_studywide_QC_report.R
 Rscript scripts/run_DESeq2.R
