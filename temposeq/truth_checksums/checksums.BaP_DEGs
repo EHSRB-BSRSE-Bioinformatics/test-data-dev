@@ -1,6 +1,6 @@
 a053cd22aa594aeff9a77bff6554c338  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-DEG_summary.txt
-af0ec475e898a73577193cae17371b1f  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-DESeq_output_all_genes.txt
 986dfd4761ee812728c063a30e423864  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-DESeq_output_ALL.txt
+af0ec475e898a73577193cae17371b1f  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-DESeq_output_all_genes.txt
 dd3cc1307cbfe20186d84716032d8b5f  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-DESeq_output_significant.txt
 dee7e933ca6f82bd02cc62e7daf19b83  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-Per_sample_CPM.txt
 6a87183e6e74d61b84eda4606ce26b3b  analysis/DEG_lists/BaP/TempO-Seq_Test_BaP_02-08-2022.15.34-Per_sample_normalized_counts.txt
