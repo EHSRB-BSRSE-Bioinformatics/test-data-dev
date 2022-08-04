@@ -41,5 +41,5 @@ md5sum analysis/DEG_lists/BaP/*.txt > checksums.BaP_DEGs
 md5sum analysis/DEG_lists/CISP/*.txt > checksums.CISP_DEGs
 md5sum analysis/pathway_analysis/BaP/*WikiPathways* > checksums.BaP_pathways
 md5sum analysis/pathway_analysis/CISP/* > checksums.CISP_pathways
-md5sum analysis/BMD_and_biomarker_files/* > checksums.BMD_files
-md5sum analysis/BMD_and_biomarker_files/*/* >> checksums.BMD_files
+md5sum analysis/BMD_and_biomarker_files/*.txt > checksums.BMD_files
+md5sum analysis/BMD_and_biomarker_files/*/*.txt >> checksums.BMD_files
