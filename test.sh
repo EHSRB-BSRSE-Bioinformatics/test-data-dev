@@ -43,3 +43,35 @@ md5sum analysis/pathway_analysis/BaP/*WikiPathways* > checksums.BaP_pathways
 md5sum analysis/pathway_analysis/CISP/* > checksums.CISP_pathways
 md5sum analysis/BMD_and_biomarker_files/*.txt > checksums.BMD_files
 md5sum analysis/BMD_and_biomarker_files/*/*.txt >> checksums.BMD_files
+
+cmp truth_checksums/checksum.count_table checksum.count_table
+cmp truth_checksums/checksum.metadata.QC_applied checksum.metadata.QC_applied
+cmp truth_checksums/checksum.QC_per_sample checksum.QC_per_sample
+echo "BaP DEG checksums from this run:"
+cat checksums.BaP_DEGs # Can be informative if there are errors
+echo "BaP DEG checksums from 'truth' set:"
+cat truth_checksums/checksums.BaP_DEGs # Can be informative if there are errors
+echo "CISP DEG checksums from this run:"
+cat checksums.CISP_DEGs
+echo "CISP DEG checksums from 'truth' set:"
+cat truth_checksums/checksums.CISP_DEGs # Can be informative if there are errors
+echo "BaP pathway checksums from this run:"
+cat checksums.BaP_pathways
+echo "BaP pathway checksums from 'truth' set:"
+cat truth_checksums/checksums.BaP_pathways
+
+diff -q <(sort -u checksums.BaP_DEGs | awk {'print $1'}) \
+<(grep -Fxf \
+<(cat checksums.BaP_DEGs | awk {'print $1'}) \
+<(cat truth_checksums/checksums.BaP_DEGs | awk {'print $1'} | sort -u))
+
+diff -q <(sort -u checksums.CISP_DEGs | awk {'print $1'}) \
+<(grep -Fxf \
+<(cat checksums.CISP_DEGs | awk {'print $1'}) \
+<(cat truth_checksums/checksums.CISP_DEGs | awk {'print $1'} | sort -u))
+
+cmp truth_checksums/checksums.BaP_pathways checksums.BaP_pathways
+cat checksums.BMD_files # Can be informative if there are errors
+cat truth_checksums/checksums.BMD_files # Can be informative if there are errors
+cmp truth_checksums/checksums.BMD_files checksums.BMD_files
+
