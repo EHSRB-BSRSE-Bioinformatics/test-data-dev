@@ -12,7 +12,8 @@ common:
   write_additional_output: TRUE # export BMD, biomarker, and biosets output? facet variable should contain chemical and timepoint information
   celltype: "Some cells" # only required for biosets output. Cell type or species used
   units: "uM" # only required for biosets output. Units of dose
-  
+  output_digits: 2
+
 ###### Alignment and processing pipeline parameters
 
 pipeline:
