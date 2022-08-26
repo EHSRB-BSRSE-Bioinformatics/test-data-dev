@@ -77,3 +77,4 @@ DESeq2:
   generate_data_explorer_report: TRUE
   generate_go_pathway_report: TRUE
   output_digits: 2
+  parallel: TRUE
