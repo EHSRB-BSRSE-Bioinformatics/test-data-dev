@@ -12,6 +12,8 @@ common:
   write_additional_output: TRUE # export BMD, biomarker, and biosets output? facet variable should contain chemical and timepoint information
   celltype: "Some cells" # only required for biosets output. Cell type or species used
   units: "uM" # only required for biosets output. Units of dose
+  biospyder_dbs: "./"
+  biospyder_manifest_file:  "Human_S1500_1.2_standardized.csv"
 
 ###### Alignment and processing pipeline parameters
 
@@ -63,8 +65,6 @@ DESeq2:
   cpus: 2                       # Set to a lower number (e.g., 2 to 4) if you aren't working in a server environment
   run_pathway_analysis: TRUE     # Optionally disable pathway analysis if not available for your organism
   wikipathways_directory: "../"
-  biospyder_dbs: "./"
-  biospyder_manifest_file:  "Human_S1500_1.2_standardized.csv"
   wikipathways_filename: "wikipathways-20210810-gmt-Homo_sapiens.gmt"
   nBestFeatures: 20              # The number of best features to make plots of their counts
   nBest: 100                     # Number of features to include in table and limiting PCA/clustering analysis
