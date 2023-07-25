@@ -27,8 +27,8 @@ wget https://github.com/EHSRB-BSRSE-Bioinformatics/unify_temposeq_manifests/raw/
 #conda env create -f environment.yml
 #mamba activate R-ODAF
 eval "$(conda shell.bash hook)"
-conda activate R-ODAF
-snakemake --cores 8
+conda activate snakemake
+snakemake --cores 8 --use-conda
 Rscript scripts/render_studywide_QC_report.R
 Rscript scripts/run_DESeq2.R
 Rscript scripts/render_DESeq2_report.R
