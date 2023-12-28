@@ -18,7 +18,7 @@ common:
 ###### Alignment and processing pipeline parameters
 
 pipeline:
-  genomedir: reference/ # directory where genone information can be found (the files below should be in this directory)
+  genomedir: inputs/reference/ # directory where genome information can be found (the files below should be in this directory)
   genome_filename: humansurrogate1_2.fa # filename for genome
   annotation_filename: humansurrogate1_2.gtf # filename for gene annotations
   genome_name: "S1500" # used for labeling genome index files
