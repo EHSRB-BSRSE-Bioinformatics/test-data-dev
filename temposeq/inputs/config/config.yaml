@@ -47,6 +47,7 @@ QC:
 
 ###### DESeq2 parameters
 DESeq2:
+  analysis_name: "default"  # short string identifying analysis settings. This will appear in the analysis directory and file names
   species: "human"                 # one of human, mouse, rat, hamster
   design: "group"                # single experimental group of interest; entries in this column must match the contrast names.
   intgroup: ["group"]            # experimental group of interest plus covariates; can be more than one
